@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('/imagenes/back1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-box h1{
+    color: #fff;
+    align-self: center;
+}
+
+ion-icon {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+
+.inputbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input:focus ~ label {
+    top: -5px;
+}
+
+
+.inputbox input {
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    font-size: 1em;
+    padding-left: 5px;
+    color: #5b005c;
+}
+
+button {
+    cursor: pointer;
+    background-color: #d82929;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b02020;
+}
+
+.register p {
+    text-align: center;
+    color: #fff;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #e21010;
+    font-weight: 600;
+}
+
+/* Estilo para el placeholder de los navegadores basados en Webkit (Chrome, Safari) */
+.inputbox input::placeholder {
+    color: #ffffff;
+    opacity: 1; /* Firefox requiere esto para mostrar el color */
+}
+
+/* Estilo para el placeholder en Internet Explorer y Edge */
+.inputbox input:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+/* Estilo para el placeholder en Firefox */
+.inputbox input::-moz-placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
