@@ -72,12 +72,13 @@ button:hover {
 
 .register p {
     text-align: center;
-    color: #fff;
+    color: #acacac;
+    
 }
 
 .register p a {
     text-decoration: none;
-    color: #e21010;
+    color: #ffffff;
     font-weight: 600;
 }
 
@@ -96,4 +97,22 @@ button:hover {
 .inputbox input::-moz-placeholder {
     color: #ffffff;
     opacity: 1;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('/imagenes/back1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-logo {
+    width: 120px;  /* puedes ajustar este valor según la apariencia deseada */
+    height: auto;
+    margin-bottom: 20px;  /* espacio entre la imagen de la marca y el formulario */
+    display: block;
 }
